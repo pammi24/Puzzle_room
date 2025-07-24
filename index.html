@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-box">
+    <h2 id="room-title">Room 1</h2>
+    <p id="puzzle">Puzzle appears here</p>
+    <input type="text" id="answer" placeholder="Type your answer">
+    <div class="buttons">
+      <button onclick="checkAnswer()">Submit</button>
+      <button onclick="showHint()">Hint</button>
+    </div>
+    <p id="clue"></p>
+    <p id="message"></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time: <span id="timer">60s</span></p>
+    <button id="next" onclick="nextRoom()" style="display:none;">Next Room</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
